@@ -1,0 +1,16 @@
+# sum head..............
+def sumhead(n):
+    if n==0:
+        return 0
+    return n+sumhead(n-1)
+num= int(input())
+print("sum:",sumhead(num))
+
+# sum tail...............
+def sumtail(n, temp=0):
+    if n==0:
+        return temp
+    return sumtail(n-1, temp+n)
+num= int(input())
+print("sum:",sumtail(num))
+    
