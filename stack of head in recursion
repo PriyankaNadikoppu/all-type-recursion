@@ -1,7 +1,7 @@
 def head(n):
     if n==0:
         return
-    print(n)
     head(n-1)
+    print(n)
 num= int(input())
 head(num)
